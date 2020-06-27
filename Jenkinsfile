@@ -11,7 +11,7 @@ pipeline {
 
     stage ('Run Unit Test') {
       steps {
-        sh 'npm run test'
+        sh 'export PATH=/usr/local/bin npm run test'
       }
     }
   }
